@@ -1,0 +1,7 @@
+*.o
+*.a
+adder_8bit
+adder_8bit.exe
+.DS_Store
+*.swp
+*.swo
