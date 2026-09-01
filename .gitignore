@@ -1,7 +1,22 @@
+# Compiled files
 *.o
 *.a
+*.so
+*.out
+
+# Executable files
 adder_8bit
 adder_8bit.exe
+*.exe
+
+# macOS files
 .DS_Store
+
+# Text editors
 *.swp
 *.swo
+*~
+
+# IDE
+.vscode/
+.idea/
