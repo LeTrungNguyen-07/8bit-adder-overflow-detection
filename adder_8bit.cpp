@@ -94,31 +94,21 @@ public:
 };
 //  PRINT DECORATIVE BORDERS
 void printHeader() {
-    cout << "\n" << BLUE << BOLD;
-    cout << "╔════════════════════════════════════════════════════════════╗\n"
-         << "║         8-BIT ADDER - OVERFLOW DETECTION SYSTEM            ║\n"
-         << "║                                                            ║\n"
-         << "║  Demonstrates how CPUs add two 8-bit unsigned integers     ║\n"
-         << "║  and detect overflow when sum exceeds 255                  ║\n"
-         << "╚════════════════════════════════════════════════════════════╝"
-         << RESET << "\n\n";
+    cout << "\n8-BIT ADDER - OVERFLOW DETECTION SYSTEM\n";
+    cout << "Demonstrates how CPUs add two 8-bit unsigned integers\n";
+    cout << "and detect overflow when sum exceeds 255\n\n";
 }
 void printTestHeader(int testNum, int a, int b) {
-    cout << CYAN << BOLD << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" << RESET << "\n";
-    cout << YELLOW << BOLD << " TEST CASE " << testNum << ": " << a << " + " << b << RESET << "\n";
-    cout << CYAN << BOLD << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" << RESET << "\n";
+    cout << "\nTest Case " << testNum << ": " << a << " + " << b << "\n";
+    cout << "---\n";
 }
 
 void printSectionHeader(const string& title) {
-    cout << "\n" << BOLD << BLUE << title << RESET << "\n";
+    cout << "\n" << title << "\n";
 }
 
 void printFooter() {
-    cout << "\n" << BLUE << BOLD;
-    cout << "╔════════════════════════════════════════════════════════════╗\n"
-         << "║                   END OF REPORT                            ║\n"
-         << "╚════════════════════════════════════════════════════════════╝"
-         << RESET << "\n\n";
+    cout << "\n";
 }
 // TEST SUITE
 void runTests() {
