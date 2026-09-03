@@ -90,5 +90,3 @@ Press **N** when asked to skip interactive mode.
 https://github.com/LeTrungNguyen-07/8bit-adder-overflow-detection.git
 
 ---
-
-**Status:** ✓ Hoàn thành và sẵn sàng nộp
