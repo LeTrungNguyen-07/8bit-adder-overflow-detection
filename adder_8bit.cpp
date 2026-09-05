@@ -95,8 +95,8 @@ public:
 //  PRINT DECORATIVE BORDERS
 void printHeader() {
     cout << "\n8-BIT ADDER - OVERFLOW DETECTION SYSTEM\n";
-    cout << "Demonstrates how CPUs add two 8-bit unsigned integers\n";
-    cout << "and detect overflow when sum exceeds 255\n\n";
+    cout << "Demonstrates 8-bit unsigned integer addition and overflow detection\n";
+    cout << "with wraparound behavior when the sum exceeds 255\n\n";
 }
 void printTestHeader(int testNum, int a, int b) {
     cout << "\nTest Case " << testNum << ": " << a << " + " << b << "\n";
