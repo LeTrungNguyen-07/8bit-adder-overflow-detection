@@ -1,14 +1,14 @@
 # 8-Bit Adder with Overflow Detection
 
-## Giới Thiệu (Introduction)
+## Introduction
 
 A C++ implementation that demonstrates 8-bit unsigned integer addition, binary representation, overflow detection, and wraparound behavior.
 
-## Mục Đích (Purpose)
+## Purpose
 
 This project was built to understand binary arithmetic, integer overflow, and basic concepts related to digital computer arithmetic while practicing C++ software design and testing.
 
-## Tính Năng (Features)
+## Features
 
 ✓ Performs 8-bit unsigned integer addition with values from 0 to 255
 
@@ -26,7 +26,7 @@ This project was built to understand binary arithmetic, integer overflow, and ba
 
 ✓ Clean, well-documented C++ code
 
-## Cách Sử Dụng (How to Use)
+## How to Use
 
 ### Compile
 
@@ -43,7 +43,7 @@ g++ -o adder_8bit adder_8bit.cpp
 
 Press **N** when asked to skip interactive mode.
 
-## Kết Quả Test (Test Results)
+## Test Results
 
 | Test # | Input A | Input B | Expected | Actual | Overflow | Status |
 |--------|---------|---------|----------|--------|----------|--------|
@@ -55,7 +55,7 @@ Press **N** when asked to skip interactive mode.
 
 **Result:** ✓ All tests passed successfully
 
-## Thông Tin Kỹ Thuật (Technical Details)
+## Technical Details
 
 **Language:** C++
 **File Size:** ~7.5 KB
@@ -70,7 +70,7 @@ Press **N** when asked to skip interactive mode.
 **Runtime:** Negligible for the tested workload
 **Memory Usage:** Minimal
 
-## Tôi Học Được Gì (What I Learned)
+## What I Learned
 
 1. **Binary Arithmetic** - Understanding how addition works at the bit level
 
@@ -84,7 +84,7 @@ Press **N** when asked to skip interactive mode.
 
 6. **Version Control** - Using Git to track changes and maintain a clean development history.
 
-## Chi Tiết Triển Khai (Implementation Details)
+## Implementation Details
 
 - **Class Design:** Created `Adder8Bit` class to encapsulate state (inputA, inputB, result, overflowFlag)
 - **Overflow Detection:** Check if (inputA + inputB) > 255 to set overflow flag
