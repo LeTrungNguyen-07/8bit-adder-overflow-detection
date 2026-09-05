@@ -14,7 +14,9 @@ This project was built to understand binary arithmetic, integer overflow, and ba
 
 ✓ Automatic overflow detection
 
-✓ Detects and indicates overflow conditions
+✓ Displays the result in both decimal and binary
+
+✓ Indicates when the result exceeds the 8-bit range
 
 ✓ 5 test cases covering normal, boundary, zero, and overflow scenarios
 
@@ -31,7 +33,7 @@ This project was built to understand binary arithmetic, integer overflow, and ba
 ### Compile
 
 ```bash
-g++ -o adder_8bit adder_8bit.cpp
+clang++ -std=c++14 -o adder_8bit adder_8bit.cpp
 ```
 
 ### Run
@@ -41,11 +43,11 @@ g++ -o adder_8bit adder_8bit.cpp
 ./adder_8bit
 ```
 
-Press **N** when asked to skip interactive mode.
+The program automatically runs the test suite and binary conversion demonstrations before entering interactive mode.
 
 ## Test Results
 
-| Test # | Input A | Input B | Expected | Actual | Overflow | Status |
+| Test # | Input A | Input B | Raw Sum | 8-bit Result | Overflow | Status |
 |--------|---------|---------|----------|--------|----------|--------|
 | 1 | 100 | 50 | 150 | 150 | NO | ✓ |
 | 2 | 200 | 100 | 300 | 44 | YES | ✓ |
@@ -59,9 +61,9 @@ Press **N** when asked to skip interactive mode.
 
 **Language:** C++
 
-**Standard:** C++11
+**Standard:** C++14
 
-**Compiler:** g++ 
+**Compiler:** Apple Clang 17.0.0
 
 **Libraries Used:** 
 - iostream — input and output
@@ -97,7 +99,7 @@ The test cases include normal addition, zero values, the maximum 8-bit value, an
 
 Building this project helped me break a simple arithmetic problem into smaller components: binary conversion, calculation, overflow detection, result handling, testing, and user interaction.
 
-## Limitations and Future Inprovements
+## Limitations and Future Improvements
 
 This project focuses on demonstrating the concepts of 8-bit arithmetic rather than reproducing the complete hardware implementation of an adder.
 
@@ -115,7 +117,7 @@ This would allow the project to explore concepts such as:
 - **Overflow Detection:** Check if (inputA + inputB) > 255 to set overflow flag
 - **Wraparound:** Use modulo 256 operator (%) to wrap result back to valid range
 - **Input Validation:** Check inputs are in range [0, 255] before computation
-- **Output Formatting:** Used ANSI escape codes for colors and Unicode characters for graphics
+- **Output Formatting:** Used ANSI escape codes for terminal colors and Unicode symbols for visual feedback
 
 ## Project Motivation 
 
