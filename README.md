@@ -2,21 +2,21 @@
 
 ## Giới Thiệu (Introduction)
 
-A C++ implementation demonstrating how CPUs perform 8-bit arithmetic and handle overflow conditions.
+A C++ implementation that demonstrates 8-bit unsigned integer addition, binary representation, overflow detection, and wraparound behavior.
 
 ## Mục Đích (Purpose)
 
-I built this project to understand binary arithmetic at the hardware level and practice software design principles.
+This project was built to understand binary arithmetic, integer overflow, and basic concepts related to digital computer arithmetic while practicing C++ software design and testing.
 
 ## Tính Năng (Features)
 
 ✓ Performs 8-bit unsigned integer addition with 0-255 range
 ✓ Automatic overflow detection
 ✓ Detects and indicates overflow conditions
-✓ 5 comprehensive test cases covering all scenarios
+✓ 5 test cases covering normal, boundary, zero, and overflow scenarios
 ✓ Interactive mode for custom input testing
-✓ Input validation with error messages
-✓ Professional formatted output with colors and graphics
+✓ Basic input validation for values outside the 0–255 range
+✓ Formatted terminal output with ANSI colors and Unicode symbols
 ✓ Clean, well-documented C++ code
 
 ## Cách Sử Dụng (How to Use)
@@ -55,13 +55,13 @@ Press **N** when asked to skip interactive mode.
 **Compiler:** g++ (C++11 standard)
 **Libraries Used:** 
 - iostream (input/output)
-- vector (8-bit array)
+- vector — stores the 8-bit binary representation
 - iomanip (formatting)
-- string (ANSI colors)
+- string — stores ANSI color codes and text values
 
 **Compile Time:** < 1 second
-**Runtime:** Instant
-**Memory Usage:** Minimal (~1 KB)
+**Runtime:** Negligible for the tested workload
+**Memory Usage:** Minimal
 
 ## Tôi Học Được Gì (What I Learned)
 
