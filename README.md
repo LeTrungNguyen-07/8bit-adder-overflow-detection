@@ -11,6 +11,7 @@ This project was built to understand binary arithmetic, integer overflow, and ba
 ## Tính Năng (Features)
 
 ✓ Performs 8-bit unsigned integer addition with values from 0 to 255
+
 ✓ Automatic overflow detection
 ✓ Detects and indicates overflow conditions
 ✓ 5 test cases covering normal, boundary, zero, and overflow scenarios
