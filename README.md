@@ -59,12 +59,14 @@ Press **N** when asked to skip interactive mode.
 
 **Language:** C++
 
-**Compiler:** g++ (C++11 standard)
+**Standard:** C++11
+
+**Compiler:** g++ 
 
 **Libraries Used:** 
-- iostream - input and output
+- iostream — input and output
 - vector — storing binary bits
-- iomanip - formatted terminal output
+- iomanip — formatted terminal output
 - string — text and ANSI color codes
 
 ## What I Learned
