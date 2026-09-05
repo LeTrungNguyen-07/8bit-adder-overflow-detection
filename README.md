@@ -58,13 +58,12 @@ Press **N** when asked to skip interactive mode.
 ## Technical Details
 
 **Language:** C++
-**File Size:** ~7.5 KB
 **Compiler:** g++ (C++11 standard)
 **Libraries Used:** 
-- iostream (input/output)
-- vector — stores the 8-bit binary representation
-- iomanip (formatting)
-- string — stores ANSI color codes and text values
+- iostream - input and output
+- vector — storing binary bits
+- iomanip - formatted terminal output
+- string — text and ANSI color codes
 
 **Compile Time:** < 1 second
 **Runtime:** Negligible for the tested workload
@@ -72,18 +71,44 @@ Press **N** when asked to skip interactive mode.
 
 ## What I Learned
 
-1. **Binary Arithmetic** - Understanding how addition works at the bit level
+1. **Binary Arithmetic**
 
-2. **Overflow Detection** - How to detect when a result exceeds the maximum representable value and handle wraparound behavior.
+I learned how decimal numbers from 0 to 255 can be represented using exactly 8 bits and practiced working with bitwise operations.
 
-3. **Object-Oriented Design** - Using classes to encapsulate logic and separate concerns for better code organization.
+2. **Integer Overflow**
 
-4. **Software Testing** - Designing comprehensive test cases that cover normal cases, boundary cases, and edge cases.
+I learned why an 8-bit unsigned integer has a maximum value of 255 and how arithmetic behaves when that limit is exceeded.
 
-5. **Professional Code Quality** - Writing clean, well-commented code with proper error handling and user-friendly output.
+3. **Wraparound Behavior**
 
-6. **Version Control** - Using Git to track changes and maintain a clean development history.
+I learned that an overflowing 8-bit result can be viewed as arithmetic modulo 256.
 
+4. **Object-Oriented Programming**
+
+I practiced using a C++ class to encapsulate data and related operations, separating the calculation logic from the rest of the program.
+
+5. **Software Testing**
+
+I learned to test both ordinary and boundary conditions rather than relying only on simple examples.
+
+The test cases include normal addition, zero values, the maximum 8-bit value, and multiple overflow scenarios.
+
+6. **Problem Solving**
+
+Building this project helped me break a simple arithmetic problem into smaller components: binary conversion, calculation, overflow detection, result handling, testing, and user interaction.
+
+## Limitations and Future Inprovements
+
+This project focuses on demonstrating the concepts of 8-bit arithmetic rather than reproducing the complete hardware implementation of an adder.
+
+A future version could implement the addition at the individual bit level using Full Adder logic and carry propagation instead of relying on C++ integer addition.
+
+This would allow the project to explore concepts such as: 
+- XOR, AND, and OR logic
+- Carry propagation
+- Half Adders and Full Adders
+- Ripple-Carry Adders
+- Digital logic design
 ## Implementation Details
 
 - **Class Design:** Created `Adder8Bit` class to encapsulate state (inputA, inputB, result, overflowFlag)
@@ -91,6 +116,12 @@ Press **N** when asked to skip interactive mode.
 - **Wraparound:** Use modulo 256 operator (%) to wrap result back to valid range
 - **Input Validation:** Check inputs are in range [0, 255] before computation
 - **Output Formatting:** Used ANSI escape codes for colors and Unicode characters for graphics
+
+## Project Motivation 
+
+This project is a small step toward understanding how higher-level programming relates to the lower-level principles behind computer systems.
+
+By starting with a simple 8-bit arithmetic problem, I explored concepts that connect programming with computer architecture and digital logic, which I hope to study in greater depth in the future.
 
 ## Repository GitHub
 
