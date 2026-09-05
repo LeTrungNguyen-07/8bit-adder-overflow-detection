@@ -58,16 +58,14 @@ Press **N** when asked to skip interactive mode.
 ## Technical Details
 
 **Language:** C++
+
 **Compiler:** g++ (C++11 standard)
+
 **Libraries Used:** 
 - iostream - input and output
 - vector — storing binary bits
 - iomanip - formatted terminal output
 - string — text and ANSI color codes
-
-**Compile Time:** < 1 second
-**Runtime:** Negligible for the tested workload
-**Memory Usage:** Minimal
 
 ## What I Learned
 
