@@ -13,11 +13,17 @@ This project was built to understand binary arithmetic, integer overflow, and ba
 ✓ Performs 8-bit unsigned integer addition with values from 0 to 255
 
 ✓ Automatic overflow detection
+
 ✓ Detects and indicates overflow conditions
+
 ✓ 5 test cases covering normal, boundary, zero, and overflow scenarios
+
 ✓ Interactive mode for custom input testing
+
 ✓ Basic input validation for values outside the 0–255 range
+
 ✓ Uses formatted terminal output with ANSI colors and Unicode symbols
+
 ✓ Clean, well-documented C++ code
 
 ## Cách Sử Dụng (How to Use)
